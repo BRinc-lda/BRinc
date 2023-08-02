@@ -9,12 +9,12 @@ import RegisterForm from "./pages/Register Form/Register";
 function App() {
   return (
     <>
-      <RegisterForm />
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/search" element={<Search />} />
         <Route path="/about" element={<About />} />
+        <Route path="/register" element={<RegisterForm />} />
       </Routes>
     </>
   );
