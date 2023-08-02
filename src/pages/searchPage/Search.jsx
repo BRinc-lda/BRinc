@@ -1,5 +1,9 @@
 function Search() {
-  return <div>Search</div>;
+  return (
+    <div>
+      <input type="text" placeholder="search your favorite book..." />
+    </div>
+  );
 }
 
 export default Search;

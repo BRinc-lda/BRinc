@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.backgroundContainer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/src/assets/LibraryImg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .registerLoginForm {
   display: flex;
   flex-direction: column;
@@ -13,6 +27,13 @@
 }
 
 .registerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
