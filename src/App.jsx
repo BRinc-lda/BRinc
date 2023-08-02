@@ -1,5 +1,10 @@
+import RegisterForm from "./Pages/Register Form/RegisterForm";
 function App() {
-  return <></>;
+  return (
+    <>
+      <RegisterForm />
+    </>
+  );
 }
 
 export default App;
