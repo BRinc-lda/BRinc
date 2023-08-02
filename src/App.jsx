@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar/NavBar";
 import HomePage from "./Pages/homePage/HomePage";
 import Search from "./Pages/searchPage/Search";
 import About from "./Pages/aboutPage/About";
@@ -8,7 +7,6 @@ import RegisterForm from "./Pages/Register Form/RegisterForm";
 function App() {
   return (
     <>
-      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/search" element={<Search />} />

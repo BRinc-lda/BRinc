@@ -5,11 +5,10 @@ function NavBar() {
   return (
     <nav>
       <div className="navbar">
-        <img src="/src/assets/book light.png" />
+        <Link to="/">
+          <img src="/src/assets/book light.png" />
+        </Link>
         <ul>
-          <Link to="/">
-            <li>Home</li>
-          </Link>
           <Link to="/search">
             <li>Search</li>
           </Link>
