@@ -15,7 +15,7 @@ function RegisterForm() {
         Register
       </button>
       <p>
-        Already have an account? <a href="">LOGIN</a>
+        Already have an account? <a href="">Login</a>
       </p>
     </div>
   );
