@@ -3,7 +3,6 @@ import HomePage from "./Pages/homePage/HomePage";
 import Search from "./Pages/searchPage/Search";
 import About from "./Pages/aboutPage/About";
 import RegisterForm from "./Pages/Register Form/RegisterForm";
-
 function App() {
   return (
     <>
