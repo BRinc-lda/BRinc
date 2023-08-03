@@ -9,7 +9,7 @@ function SearchBar() {
   };
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search for your favourite book</label>
+      <label htmlFor="search">BRinc Library</label>
       <input
         type="text"
         name="search"

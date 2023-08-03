@@ -4,3 +4,18 @@
     background-position: center center;
     height: 100vh;
 }
+
+.regbutton{
+    width: 144px;
+    height: 48px;
+    border-radius: 17px;
+    background: #27ffff;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.btncontainer{
+    display:flex;
+    justify-content: center;
+}
