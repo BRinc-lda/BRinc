@@ -22,7 +22,7 @@
   text-shadow: 0 0 10px #000;
 }
 .navbar li:hover {
-  text-shadow: 0 0 30px #27ffff;
+  text-shadow: 0 0 50px #27ffff;
   padding: 0;
 }
 .navbar a {
