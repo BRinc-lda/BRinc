@@ -1,8 +1,11 @@
-import Search from "../searchPage/Search";
+import BookList from "../../components/BookList/BookList";
+import NavBar from "../../components/NavBar/NavBar";
+import "./HomePage.css";
 function HomePage() {
   return (
-    <div>
-      <Search />
+    <div className="homepage">
+      <NavBar />
+      <BookList />
     </div>
   );
 }
