@@ -6,7 +6,7 @@ function NavBar() {
     <nav>
       <div className="navbar">
         <Link to="/">
-          <img src="/src/assets/book light.png" />
+          <img src="/src/assets/book light.png" className="img" />
         </Link>
         <ul>
           <Link to="/search">
