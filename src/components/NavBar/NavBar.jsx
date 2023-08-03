@@ -18,6 +18,9 @@ function NavBar() {
           <Link to="/login">
             <li> LogIn </li>
           </Link>
+          <Link to="/payment">
+            <li> pay </li>
+          </Link>
         </ul>
       </div>
     </nav>
