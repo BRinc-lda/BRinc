@@ -6,7 +6,7 @@ function RegisterForm() {
     <div className="backgroundContainer">
       <NavBar />
       <div className="registerLoginForm">
-        <div className="registerForm hidden">
+        <div className="registerForm ">
           <input
             type="text"
             placeholder="First Name"
@@ -41,12 +41,12 @@ function RegisterForm() {
           <button className="btn btnRegister" type="submit">
             Register
           </button>
-          <p>
+          <p className="formBtnText">
             Already have an account? <a href="">Login</a>
           </p>
         </div>
 
-        <div className="loginForm ">
+        <div className="loginForm hidden">
           <input
             type="email"
             placeholder="Email"
