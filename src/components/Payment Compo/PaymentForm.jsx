@@ -45,7 +45,7 @@ function PaymentForm() {
             placeholder="cv"
           />
         </div>
-        <button className="btn">Done</button>
+        <button className="btnpayment">Done</button>
       </div>
     </div>
   );
