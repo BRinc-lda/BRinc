@@ -1,0 +1,23 @@
+.abouContainer {
+  background-color: #333;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.aboutUs p {
+  text-align: center;
+  color: #fff;
+}
+
+.aboutUs h1 {
+  color: #fff;
+  margin-bottom: 50px;
+}
