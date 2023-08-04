@@ -73,6 +73,14 @@
 .btnpayment {
   margin-left: 40%;
   margin-top: 60px;
+  width: 144px;
+  height: 48px;
+  border-radius: 17px;
+  background: #27ffff;
+  border: none;
+}
+.btnpayment:hover {
+  box-shadow: 0 0 50px #27ffff;
 }
 
 .master {
