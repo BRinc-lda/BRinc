@@ -2,6 +2,7 @@ import "./PaymentForm.css";
 function PaymentForm() {
   return (
     <div className="payContainer">
+      <h2 className="paymentText">Add Your Payment details</h2>
       <div className="radios">
         <div className="radio">
           <label htmlFor="">Visa</label>
@@ -41,6 +42,7 @@ function PaymentForm() {
             className="smallInput"
             min="1"
             max="3"
+            placeholder="cv"
           />
         </div>
         <button className="btn">Done</button>

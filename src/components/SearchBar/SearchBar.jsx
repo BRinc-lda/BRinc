@@ -3,7 +3,10 @@ import "./SearchBar.css";
 function SearchBar({ handleChange, searchBook }) {
   return (
     <div className="searchbar">
-      <label htmlFor="search">BRinc Library</label>
+      <h2 className="brincLibrary">
+        BRinc<span>Library</span>
+      </h2>
+      {/* <label htmlFor="search">BRinc Library</label> */}
       <input
         type="text"
         name="search"
