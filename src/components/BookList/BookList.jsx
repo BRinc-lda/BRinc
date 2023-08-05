@@ -18,7 +18,8 @@ function BookList() {
       .get(`http://openlibrary.org/search.json?title=${searchBook}`)
       .then((response) => {
         if (response.data.docs) {
-          const newBooks = response.data.docs.slice(0, 20).map((singleBook) => {
+          const newBooks = response.data.docs.slice(0, 4).map((singleBook) => {
+            //the slice was set to 20 but i will only want to display 4
             const {
               key,
               author_name,
@@ -55,7 +56,7 @@ function BookList() {
       getBook();
     } else {
       setBooks([]);
-      setError("No Search results found!");
+      setError(""); //maybe we should put empty string instead of No Search results found!
     }
   }, [searchBook]);
   return (
