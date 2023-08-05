@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
+import searchIcon from "../../assets/Searchicon.png";
 
 function NavBar() {
   return (
@@ -10,7 +11,9 @@ function NavBar() {
         </Link>
         <ul>
           <Link to="/search">
-            <li>Search</li>
+            <li>
+              <img src={searchIcon} alt="Search" className="searchicon" />
+            </li>
           </Link>
           <Link to="/about">
             <li>About</li>
