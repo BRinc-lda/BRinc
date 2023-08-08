@@ -1,5 +1,5 @@
 import defaultCover from "../../assets/cover_not_found.jpg";
-
+import "./BookCoverCard.css";
 function BookCoverCard({ book }) {
   const bookWithCover = {
     ...book,
@@ -11,9 +11,8 @@ function BookCoverCard({ book }) {
   return (
     <div className="bookcovercontainer">
       <div>
-        <h3>{bookWithCover.title}</h3>
+        {/* <p>{bookWithCover.title}</p> */}
         <img src={bookWithCover.cover_img} alt={bookWithCover.title} />
-        {/* <p>{bookWithCover.author}</p> */}
       </div>
     </div>
   );
