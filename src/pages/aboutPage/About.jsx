@@ -1,6 +1,6 @@
 import NavBar from "../../components/NavBar/NavBar";
 import "./About.css";
-import libraryPhoto from "../../assets/libraryPhoto.jpg";
+import books from "../../assets/books.png";
 
 function About() {
   return (
@@ -29,7 +29,7 @@ function About() {
             infancy. Various versions have evolved over the years, sometimes by
           </p>
 
-          <img src={libraryPhoto} alt="library photo" className="aboutImage" />
+          <img src={books} alt="library photo" className="aboutImage" />
         </div>
       </div>
     </div>
