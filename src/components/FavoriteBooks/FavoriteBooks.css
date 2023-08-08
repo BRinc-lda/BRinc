@@ -1,0 +1,22 @@
+.favTitle{
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+}
+.favoriteContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.favoriteContainer img{
+    height: 250px;
+}
+
+@media only screen and (max-width: 600px){
+    .favoriteContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+}

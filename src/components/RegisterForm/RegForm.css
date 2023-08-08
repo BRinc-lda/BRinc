@@ -18,10 +18,8 @@
   width: 600px;
   height: 550px;
   border-radius: 34px;
-
   align-items: center;
   justify-content: center;
-
   background: rgba(182, 182, 182, 0.5);
   margin-left: 35px;
   z-index: -1;
