@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 import searchIcon from "../../assets/Searchicon.png";
-
+import { FaBars } from "react-icons/fa";
 function NavBar() {
   return (
     <nav>
@@ -25,6 +25,7 @@ function NavBar() {
             <li> pay </li>
           </Link>
         </ul>
+        <FaBars className="burger" />
       </div>
     </nav>
   );

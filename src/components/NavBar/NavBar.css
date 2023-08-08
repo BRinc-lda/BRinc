@@ -29,9 +29,16 @@
 .navbar a {
   text-decoration: none;
 }
+.burger {
+  color: #27ffff;
+  display: none;
+}
 /* Mobile Version */
 @media only screen and (max-width: 600px) {
   /* Styling navBar */
+  .burger {
+    display: block;
+  }
   nav {
     height: 50px;
   }
@@ -47,11 +54,7 @@
     height: 100px;
   }
   .navbar li {
-    margin: 10px;
-    color: #27ffff;
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    font-size: 10px;
+    display: none;
   }
   .navbar li:hover {
     text-shadow: 0 0 30px #27ffff;
