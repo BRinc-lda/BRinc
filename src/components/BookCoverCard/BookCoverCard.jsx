@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import defaultCover from "../../assets/cover_not_found.jpg";
 import "./BookCoverCard.css";
 function BookCoverCard({ book }) {
@@ -9,13 +10,19 @@ function BookCoverCard({ book }) {
   };
 
   return (
-    <div className="bookcovercontainer">
-      <div>
-        {/* <p>{bookWithCover.title}</p> */}
-        <img src={bookWithCover.cover_img} alt={bookWithCover.title} />
+    <>
+      <div className="bookcovercontainer">
+        <Link to={`/bookinfo/${book.id}`}>
+          <div>
+            {/* <p>{bookWithCover.title}</p> */}
+            <img src={bookWithCover.cover_img} alt={bookWithCover.title} />
+          </div>
+        </Link>
       </div>
-    </div>
+    </>
   );
 }
 
 export default BookCoverCard;
+
+// `/bookinfo/${book.id}`
