@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./PaymentForm.css";
 function PaymentForm() {
   return (
@@ -45,7 +46,9 @@ function PaymentForm() {
             placeholder="cv"
           />
         </div>
-        <button className="btnpayment">Done</button>
+        <Link to="/paymentDone">
+          <button className="btnpayment">Done</button>
+        </Link>
       </div>
     </div>
   );
