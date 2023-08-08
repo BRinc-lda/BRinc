@@ -15,11 +15,11 @@ function NavBar() {
               <img src={searchIcon} alt="Search" className="searchicon" />
             </li>
           </Link>
-          <Link to="/about">
-            <li>About</li>
-          </Link>
           <Link to="/login">
             <li> LogIn </li>
+          </Link>
+          <Link to="/about">
+            <li>About</li>
           </Link>
         </ul>
         <FaBars className="burger" />
