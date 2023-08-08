@@ -30,7 +30,7 @@ function BookList() {
             } = singleBook;
 
             return {
-              id: key,
+              id: key.replace("/works/", ""),
               author: author_name,
               cover_id: cover_i,
               edition_count: edition_count,
@@ -67,7 +67,6 @@ function BookList() {
       ) : searchBook === "" && error && error.length > 0 ? (
         <h2>{error}</h2>
       ) : null}
-      {/* <button onClick={getBook}>Get Book</button> */}
     </>
   );
 }
