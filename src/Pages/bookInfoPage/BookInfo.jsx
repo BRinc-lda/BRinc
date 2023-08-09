@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import { Link, useParams } from "react-router-dom";
 import coverImg from "../../assets/cover_not_found.jpg";
 import "./BookInfo.css";
+import NavBarMobile from "../../components/NavBarMobile/NavBarMobile";
 
 function BookInfo() {
   const [bookDetails, setBookDetails] = useState();
@@ -65,7 +66,6 @@ function BookInfo() {
           <div className="bookDetails">
             {" "}
             <div className="coverTitle">
-              {/* <h2>{bookDetails.title}</h2> */}
               <img src={bookDetails.cover_img} alt="Book Cover" />
             </div>
             <div className="infoText">
@@ -73,8 +73,6 @@ function BookInfo() {
               <p>{bookDetails.description}</p>
               <h3>Characters</h3>
               <p>{bookDetails.subject_people}</p>
-              {/* <h3>Places</h3>
-            <p>{bookDetails.subject_places}</p> */}
               <div className="btncontainer">
                 <Link to="/payment">
                   <button className="btnBookInfo">Download</button>
@@ -86,6 +84,9 @@ function BookInfo() {
       ) : (
         <h1>loading...</h1>
       )}
+      <div className="binfomobilenav">
+        <NavBarMobile />
+      </div>
     </div>
   );
 }

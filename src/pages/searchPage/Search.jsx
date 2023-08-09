@@ -1,12 +1,14 @@
 import "./Search.css";
 import NavBar from "../../components/NavBar/NavBar";
 import BookList from "../../components/BookList/BookList";
+import NavBarMobile from "../../components/NavBarMobile/NavBarMobile";
 
 function Search() {
   return (
     <div className="searchpage">
       <NavBar />
       <BookList />
+      <NavBarMobile />
     </div>
   );
 }

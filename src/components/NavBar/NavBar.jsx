@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./NavBar.css";
-import searchIcon from "../../assets/Searchicon.png";
-import { FaBars } from "react-icons/fa";
+import { FiSearch } from "react-icons/fi";
+
 function NavBar() {
   return (
     <nav>
@@ -12,7 +12,7 @@ function NavBar() {
         <ul>
           <Link to="/search">
             <li>
-              <img src={searchIcon} alt="Search" className="searchicon" />
+              <FiSearch className="searchicon" />
             </li>
           </Link>
           <Link to="/login">
@@ -22,7 +22,6 @@ function NavBar() {
             <li>About</li>
           </Link>
         </ul>
-        <FaBars className="burger" />
       </div>
     </nav>
   );

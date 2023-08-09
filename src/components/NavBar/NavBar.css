@@ -29,17 +29,21 @@
 .navbar a {
   text-decoration: none;
 }
-.burger {
-  color: #27ffff;
-  display: none;
+.searchicon{
+  width: 25px;
+  height: 25px;
 }
+
 /* Mobile Version */
 @media only screen and (max-width: 600px) {
   /* Styling navBar */
-  .burger {
-    display: block;
+  .navbar li{
+    display: none;
   }
-  nav {
+  .navbar img{
+    display: none;
+  }
+  /* nav {
     height: 50px;
   }
   .navbar {
@@ -53,15 +57,13 @@
   .navbar .img {
     height: 100px;
   }
-  .navbar li {
-    display: none;
-  }
+  
   .navbar li:hover {
     text-shadow: 0 0 30px #27ffff;
     padding: 0;
   }
   .navbar ul {
     display: flex;
-  }
+  } */
   /* Mobile Styling ends here */
 }

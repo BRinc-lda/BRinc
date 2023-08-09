@@ -8,7 +8,6 @@ import Payment from "./Pages/payment page/Payment";
 import BookInfo from "./Pages/bookInfoPage/BookInfo";
 import PaymentDone from "./Pages/payment page/PaymentDone";
 
-
 function App() {
   return (
     <>
@@ -21,7 +20,6 @@ function App() {
         <Route path="/payment" element={<Payment />} />
         <Route path="/bookinfo/:bookId" element={<BookInfo />} />
         <Route path="/paymentDone" element={<PaymentDone />} />
-
       </Routes>
     </>
   );

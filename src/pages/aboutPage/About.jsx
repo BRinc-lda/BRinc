@@ -1,36 +1,33 @@
 import NavBar from "../../components/NavBar/NavBar";
 import "./About.css";
 import books from "../../assets/books.png";
-
+import NavBarMobile from "../../components/NavBarMobile/NavBarMobile";
 function About() {
   return (
     <div className="aboutContainer">
       <NavBar />
+
       <div className="aboutUs">
-        <h1>About Us</h1>
+        <h1>Why BRinc Library?</h1>
         <div className="aboutImgText">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the standard dummy text ever since
-            the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only
-            five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum. It is a long
-            established fact that a reader will be distracted by the readable
-            content of a page when looking at its layout. The point of using
-            Lorem Ipsum is that it has a more-or-less normal distribution of
-            letters, as opposed to using Content here, content here, making it
-            look like readable English. Many desktop publishing packages and web
-            page editors now use Lorem Ipsum as their default model text, and a
-            search for lorem ipsum will uncover many web sites still in their
-            infancy. Various versions have evolved over the years, sometimes by
+            Welcome to our online library, founded by Reuben and Bruno, two
+            passionate developers committed to a sustainable future. Our journey
+            began with a shared concern for the environment and a desire to make
+            a positive impact. Recognizing the need to conserve precious natural
+            resources, particularly the trees that are felled for traditional
+            book production, we embarked on a mission to provide an eco-friendly
+            alternative. Through our online library, we're dedicated to reducing
+            paper consumption and promoting a greener way of accessing
+            knowledge. Every digital page turned is a step towards a healthier
+            planet. Join us in our endeavor to foster a more sustainable reading
+            culture while still indulging in the joy of literature and learning.
+            Together, let's turn a new leaf for the environment and embrace the
+            digital age of reading.
           </p>
-
           <img src={books} alt="library photo" className="aboutImage" />
         </div>
+        <NavBarMobile />
       </div>
     </div>
   );

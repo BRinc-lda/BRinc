@@ -5,12 +5,11 @@
 }
 .favoriteContainer {
   display: flex;
-
   width: 80%;
   justify-content: space-between;
   margin: 0 auto;
   margin-top: 10px;
-  /* background-color: #fff; */
+  margin-bottom: 147px;
   padding: 20px;
   border-radius: 10px;
 }
