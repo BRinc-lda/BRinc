@@ -1,14 +1,17 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import { Link, useParams } from "react-router-dom";
 import coverImg from "../../assets/cover_not_found.jpg";
 import "./BookInfo.css";
 import NavBarMobile from "../../components/NavBarMobile/NavBarMobile";
+import UserContext from "../../contexts/UserContext";
 
 function BookInfo() {
   const [bookDetails, setBookDetails] = useState();
   const { bookId } = useParams();
+
+  const { user, setBookDetailsPage, bookDetailsPage } = useContext(UserContext);
 
   // console.log(bookId);
 
@@ -17,7 +20,7 @@ function BookInfo() {
       .get(`https://openlibrary.org/works/${bookId}.json`)
       .then((response) => {
         if (response.data) {
-          console.log(response.data);
+          // console.log(response.data);
           const {
             description,
             title,
@@ -74,9 +77,20 @@ function BookInfo() {
               <h3>Characters</h3>
               <p>{bookDetails.subject_people}</p>
               <div className="btncontainer">
-                <Link to="/payment">
-                  <button className="btnBookInfo">Download</button>
-                </Link>
+                {user && Object.keys(user).length > 0 ? (
+                  <Link to="/payment">
+                    <button className="btnBookInfo">Download</button>
+                  </Link>
+                ) : (
+                  <Link to="/login" state={{ previousUrl: location.pathname }}>
+                    <button
+                      onClick={() => setBookDetailsPage(true)}
+                      className="btnBookInfo"
+                    >
+                      Log In
+                    </button>
+                  </Link>
+                )}
               </div>
             </div>
           </div>
