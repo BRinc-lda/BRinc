@@ -7,7 +7,9 @@ function Search() {
   return (
     <div className="searchpage">
       <NavBar />
-      <BookList />
+      <div className="booklistcontainer">
+        <BookList />
+      </div>
       <NavBarMobile />
     </div>
   );
