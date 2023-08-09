@@ -28,7 +28,7 @@ function BookInfo() {
           } = response.data;
           const newBook = {
             description: description
-              ? description.value
+              ? description.substring(0, 300) + "..."
               : "No description found",
             title: title,
             cover_img: covers
@@ -60,23 +60,29 @@ function BookInfo() {
     <div className="bookInfoContainer">
       <NavBar />
       {bookDetails ? (
-        <div className="bookDetails">
-          {" "}
-          <div className="coverTitle">
-            <h2>{bookDetails.title}</h2>
-            <img src={bookDetails.cover_img} alt="Book Cover" />
+        <>
+          <h1>{bookDetails.title}</h1>
+          <div className="bookDetails">
+            {" "}
+            <div className="coverTitle">
+              {/* <h2>{bookDetails.title}</h2> */}
+              <img src={bookDetails.cover_img} alt="Book Cover" />
+            </div>
+            <div className="infoText">
+              <h3>Description</h3>
+              <p>{bookDetails.description}</p>
+              <h3>Characters</h3>
+              <p>{bookDetails.subject_people}</p>
+              {/* <h3>Places</h3>
+            <p>{bookDetails.subject_places}</p> */}
+              <div className="btncontainer">
+                <Link to="/payment">
+                  <button className="btnBookInfo">Download</button>
+                </Link>
+              </div>
+            </div>
           </div>
-          <div className="infoText">
-            <p>{bookDetails.description}</p>
-            <h3>Characters</h3>
-            <p>{bookDetails.subject_people}</p>
-            <h3>Places</h3>
-            <p>{bookDetails.subject_places}</p>
-            <Link to="/payment">
-              <button className="btnBookInfo">Download</button>
-            </Link>
-          </div>
-        </div>
+        </>
       ) : (
         <h1>loading...</h1>
       )}
