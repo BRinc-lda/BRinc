@@ -17,6 +17,9 @@
   align-items: center;
   margin-top: -50px;
 }
+.vectContent p {
+  color: #fff;
+}
 .btnVector {
   margin-top: 60px;
   width: 144px;

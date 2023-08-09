@@ -73,7 +73,7 @@ function BookInfo() {
             <h3>Places</h3>
             <p>{bookDetails.subject_places}</p>
             <Link to="/payment">
-              <button>Download</button>
+              <button className="btnBookInfo">Download</button>
             </Link>
           </div>
         </div>
