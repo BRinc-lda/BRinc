@@ -8,10 +8,10 @@ import { UserContextProvider } from "./contexts/UserContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <UserContextProvider>
-      <Router>
+    <Router>
+      <UserContextProvider>
         <App />
-      </Router>
-    </UserContextProvider>
+      </UserContextProvider>
+    </Router>
   </React.StrictMode>
 );
