@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./Pages/homePage/HomePage";
-import Search from "./Pages/searchPage/Search";
-import About from "./Pages/aboutPage/About";
-import LogInForm from "./Pages/logInPage/LogInForm";
-import RegisterPage from "./Pages/registerPage/RegisterPage";
-import Payment from "./Pages/payment page/Payment";
-import BookInfo from "./Pages/bookInfoPage/BookInfo";
-import PaymentDone from "./Pages/payment page/PaymentDone";
+import Search from "./pages/searchPage/Search";
+import About from "./pages/aboutPage/About";
+import LogInForm from "./pages/logInPage/LogInForm";
+import RegisterPage from "./pages/registerPage/RegisterPage";
+import Payment from "./pages/payment page/Payment";
+import BookInfo from "./pages/bookInfoPage/BookInfo";
+import PaymentDone from "./pages/payment page/PaymentDone";
+import HomePage from "./pages/homePage/HomePage"
 
 function App() {
   return (
