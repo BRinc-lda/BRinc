@@ -1,19 +1,25 @@
-
 import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar/NavBar";
-import HomePage from "./pages/homePage/HomePage";
-import Search from "./pages/searchPage/Search";
-import About from "./pages/aboutPage/About";
-    import RegisterForm from "./Pages/Register Form/RegisterForm";
+import HomePage from "./Pages/homePage/HomePage";
+import Search from "./Pages/searchPage/Search";
+import About from "./Pages/aboutPage/About";
+import LogInForm from "./Pages/logInPage/LogInForm";
+import RegisterPage from "./Pages/registerPage/RegisterPage";
+import Payment from "./Pages/payment page/Payment";
+import BookInfo from "./Pages/bookInfoPage/BookInfo";
+import PaymentDone from "./Pages/payment page/PaymentDone";
+
 function App() {
   return (
     <>
-      <RegisterForm />
-      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/search" element={<Search />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<LogInForm />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/bookinfo/:bookId" element={<BookInfo />} />
+        <Route path="/paymentDone" element={<PaymentDone />} />
       </Routes>
     </>
   );
