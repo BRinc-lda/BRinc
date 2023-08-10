@@ -41,7 +41,7 @@ function RegForm() {
         </button>
         <p className="formBtnText">
           Already have an account?{" "}
-          <Link to="/login">
+          <Link to="/login" state={{ previousUrl: location.pathname }}>
             <a href="">Login</a>
           </Link>
         </p>
